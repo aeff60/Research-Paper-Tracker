@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Research Paper Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Research Paper Tracker</h1>
+    <form id="paperForm">
+      <input type="text" id="title" placeholder="ชื่อบทความ" required />
+      <select id="category">
+        <option value="">เลือกหมวดหมู่</option>
+      </select>
+      <input type="url" id="link" placeholder="ลิงก์ของบทความ" required />
+      <textarea id="summary" placeholder="สรุป" required></textarea>
+      <input
+        type="number"
+        id="rating"
+        placeholder="คะแนน (1-5)"
+        min="1"
+        max="5"
+        required
+      />
+      <button type="submit">บันทึก</button>
+    </form>
+
+    <button id="viewHistory">ดูประวัติ</button>
+
+    <div id="history"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
